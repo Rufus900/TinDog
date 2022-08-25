@@ -1,3 +1,4 @@
+
 h1 {
   font-family: "Montserrat-Black", sans-serif;
   font-size: 3.5rem;
@@ -45,6 +46,8 @@ h1 {
 .title-image {
 width: 60%;
 transform: rotate(25deg);
+position: absolute;
+z-index: 0;
 }
 /* FONT AWESOME */
 
@@ -65,6 +68,9 @@ h3{
 
 #features {
   padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
 }
 .feature-box{
   text-align: center;
@@ -111,6 +117,8 @@ padding:7% 15%;
 }
 .card-header{
   background-color: #d3c8d8;
+  transition: font-size 1s;
+
 }
 #footer{
   text-align: center;
@@ -129,4 +137,89 @@ padding:7% 15%;
 .hej3{
 position: relative;
 top: 3rem;
+}
+.card-body{
+  padding-bottom: 50px;
+}
+.row{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.card-header:hover{
+font-size: 2.5rem;
+transition: font-size 0.5s;
+}
+.relative{
+  position: relative;
+}
+
+.foto{
+margin-left: 10px;
+display: inline-block;
+transition: color 1s;
+
+}
+
+.twitter:hover{
+color: #4cc3f5;
+
+transition: color 1s;
+
+}
+.insta:hover{
+color: #ab2db7;
+
+transition: color 1s;
+
+}
+.github:hover{
+  color: white;
+
+  transition: color 1s;
+
+}
+
+.facebook:hover {
+  color: #226dd4;
+
+  transition:color 1s;
+
+}
+a { color: inherit; }
+a:hover{
+  color: inherit;
+}
+.but{
+  transition: color 1s;
+  transition: background-color 1s;
+}
+.but2{
+  transition: color 1s;
+  transition: background-color 1s;
+}
+.but2:hover{
+  transition: color 1s;
+  transition: background-color 1s;
+}
+.but:hover{
+  background-color: white;
+  color:black;
+  transition: color 1s;
+  transition: background-color 1s;
+}
+.row{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+@media (max-width: 1300px){
+  #title{
+    text-align: center;
+  }
+  .title-image{
+    position: static;
+    transform: rotate(0deg);
+  }
+  .hej3{
+    padding-bottom: 30px;
+  }
 }
